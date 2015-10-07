@@ -2,9 +2,14 @@ var app = angular.module('resume-app', ['ui.router'])
 
 app.config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
-  .state('main', {
+  .state('home', {
     url: '',
-    templateUrl: 'partials/main.html'
-    // controller: "KittensController"
+    templateUrl: 'partials/home.html'
+    // controller: "HomeController"
+  })
+  .state('editProfile', {
+    url: '/edit',
+    templateUrl: 'partials/home.html'
+    // controller: "HomeController"
   })
 })
